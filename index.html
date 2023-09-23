@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Web App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>    <h1>Face Recognition Web App</h1>
+   <center>
+   
+    <ul id="family-members-list">
+        <li>Father</li>
+        <li>Mother</li>
+        <li>Brother</li>
+        <li>Me</li>
+    </ul>
+
+</center>
+
+    <div id="camera"></div>
+
+    <div id="captured-image-container"></div>
+    
+    <button id="capture-button" class="btn btn-primary" onclick="captureImage()">Capture Image</button>
+
+    <button id="identify-button" class="btn btn-success" onclick="check()">Identify</button>
+
+    <div id="result-container">
+        <span id="family-member-name">Family Member: </span>
+        <span id="accuracy">Accuracy: </span>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+#family-members-list {
+    list-style-type: none;
+    padding: 0;
+  
+}
+
+#family-members-list li {
+    margin: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#camera,
+#captured-image-container{
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    max-width: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#capture-button,
+#identify-button {
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+#result-container {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#family-member-name {
+    font-weight: bold;
+}
+
+#accuracy {
+    font-style: italic;
+    margin-left: 10px;
+}
+
+#capture-button:hover,
+#identify-button:hover {
+    background-color: #5bc0de; 
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #webcam-container,
+    #captured-image-container {
+        max-width: 100%;
+    }
+}
